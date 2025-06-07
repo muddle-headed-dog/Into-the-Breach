@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjagbsmdqsw33"]
+
+[ext_resource type="SpriteFrames" uid="uid://s5vbdndqogwj" path="res://Assest/Animations/water.tres" id="1_1opkm"]
+
+[node name="Water" type="Node2D"]
+
+[node name="WaterAnim" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_1opkm")
+animation = &"water"
+autoplay = "water"
+frame_progress = 0.76150614
+offset = Vector2(0, 4)

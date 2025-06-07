@@ -1,0 +1,78 @@
+{
+	"textures": [
+		{
+			"image": "map.png",
+			"size": {
+				"w": 112,
+				"h": 148
+			},
+			"sprites": [
+				{
+					"filename": "acid_0.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 74
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ground_0.png",
+					"region": {
+						"x": 56,
+						"y": 0,
+						"w": 56,
+						"h": 74
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "hole.png",
+					"region": {
+						"x": 0,
+						"y": 74,
+						"w": 56,
+						"h": 74
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "water_0.png",
+					"region": {
+						"x": 56,
+						"y": 74,
+						"w": 56,
+						"h": 74
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

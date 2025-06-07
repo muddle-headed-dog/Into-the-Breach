@@ -1,0 +1,27 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Into the Breach"
+run/main_scene="uid://cmoqjwfoeg8em"
+config/features=PackedStringArray("4.5", "Mobile")
+config/icon="uid://oom2nprieuco"
+
+[autoload]
+
+"地图工具集"="*res://Scripts/Global/MapTools.gd"
+"信号总线"="*res://Scripts/Global/EventBus.gd"
+"回合管理器"="*res://Scripts/Global/TurnManager.gd"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="mobile"

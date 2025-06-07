@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://s5vbdndqogwj"]
+
+[ext_resource type="Texture2D" uid="uid://c61ew37mi68io" path="res://Assest/Sprites/Map/water_anim.png" id="1_50kk3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1gch"]
+atlas = ExtResource("1_50kk3")
+region = Rect2(0, 0, 56, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imqoj"]
+atlas = ExtResource("1_50kk3")
+region = Rect2(56, 0, 56, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5tium"]
+atlas = ExtResource("1_50kk3")
+region = Rect2(112, 0, 56, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhnlo"]
+atlas = ExtResource("1_50kk3")
+region = Rect2(168, 0, 56, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvefl"]
+atlas = ExtResource("1_50kk3")
+region = Rect2(224, 0, 56, 50)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1gch")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imqoj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5tium")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhnlo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvefl")
+}],
+"loop": true,
+"name": &"water",
+"speed": 10.0
+}]

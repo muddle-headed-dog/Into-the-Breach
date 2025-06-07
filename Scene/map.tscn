@@ -1,0 +1,82 @@
+[gd_scene load_steps=8 format=4 uid="uid://c1du4x2yrkuhk"]
+
+[ext_resource type="Texture2D" uid="uid://bgrao6kq4vem4" path="res://Assest/Sprites/Map/map.png" id="1_7ap1n"]
+[ext_resource type="PackedScene" uid="uid://cbddg1umfw1iv" path="res://Scene/tile_broken.tscn" id="2_5mejs"]
+[ext_resource type="PackedScene" uid="uid://cwg5in57wp2rx" path="res://Scene/mountain.tscn" id="2_ex5br"]
+[ext_resource type="PackedScene" uid="uid://bnfwnd32udgft" path="res://Scene/forest.tscn" id="3_5mejs"]
+[ext_resource type="PackedScene" uid="uid://cjagbsmdqsw33" path="res://Scene/water.tscn" id="5_s12we"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_81yfc"]
+resource_name = "map"
+texture = ExtResource("1_7ap1n")
+texture_region_size = Vector2i(56, 74)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -9)
+0:0/0/custom_data_1 = 2
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, -16)
+0:1/0/custom_data_0 = 31
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, -16)
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(0, -16)
+1:1/0/custom_data_0 = 7
+
+[sub_resource type="TileSet" id="TileSet_71pa8"]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(56, 42)
+custom_data_layer_0/name = "offset"
+custom_data_layer_0/type = 2
+custom_data_layer_1/name = "durability"
+custom_data_layer_1/type = 2
+sources/0 = SubResource("TileSetAtlasSource_81yfc")
+
+[node name="Node2D" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [-63.0]
+metadata/_edit_vertical_guides_ = [-28.0]
+
+[node name="Map" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD7//z/AAABAAAAAAD7//3/AAABAAAAAAD7//7/AAABAAAAAAD7////AAABAAAAAAD7/wAAAAABAAAAAAD7/wEAAAABAAAAAAD7/wIAAAABAAAAAAD7/wMAAAABAAAAAAD8//z/AAABAAAAAAD8//3/AAABAAAAAAD8//7/AAABAAAAAAD8////AAABAAAAAAD8/wAAAAABAAAAAAD8/wEAAAABAAAAAAD8/wMAAAABAAAAAAD9//z/AAABAAAAAAD9//3/AAABAAAAAAD9//7/AAABAAAAAAD9////AAABAAEAAAD9/wAAAAABAAEAAAD9/wEAAAABAAAAAAD9/wMAAAABAAAAAAD+//z/AAABAAAAAAD+//3/AAABAAAAAAD+//7/AAABAAAAAAD+////AAABAAAAAAD+/wAAAAABAAAAAAD+/wEAAAABAAAAAAD+/wIAAAABAAAAAAD+/wMAAAABAAAAAAD///z/AAABAAAAAAD///3/AAABAAAAAAD///7/AAAAAAAAAAD/////AAABAAAAAAD//wAAAAABAAAAAAD//wIAAAABAAAAAAD//wMAAAABAAAAAAAAAPz/AAABAAAAAAAAAP3/AAABAAAAAAAAAP7/AAABAAAAAAAAAP//AAABAAAAAAAAAAAAAAABAAAAAAAAAAEAAAABAAAAAAAAAAIAAAABAAAAAAAAAAMAAAABAAAAAAABAP3/AAABAAAAAAABAP7/AAABAAAAAAABAP//AAABAAAAAAABAAAAAAABAAAAAAABAAEAAAABAAAAAAABAAIAAAABAAAAAAABAAMAAAABAAAAAAACAPz/AAABAAAAAAACAP3/AAABAAAAAAACAP7/AAABAAAAAAACAAAAAAABAAAAAAACAAEAAAABAAAAAAACAAIAAAABAAAAAAACAAMAAAABAAAAAAACAP//AAABAAAAAAD9/wIAAAABAAAAAAD8/wIAAAAAAAEAAAD//wEAAAABAAAAAAABAPz/AAABAAAAAAA=")
+tile_set = SubResource("TileSet_71pa8")
+metadata/_edit_lock_ = true
+
+[node name="MountainParent" type="Node2D" parent="Map"]
+z_index = 1
+
+[node name="Mountain1" parent="Map/MountainParent" instance=ExtResource("2_ex5br")]
+position = Vector2(84, -105)
+
+[node name="Mountain2" parent="Map/MountainParent" instance=ExtResource("2_ex5br")]
+position = Vector2(112, -84)
+
+[node name="Mountain3" parent="Map/MountainParent" instance=ExtResource("2_ex5br")]
+position = Vector2(140, -63)
+
+[node name="ForestParent" type="Node2D" parent="Map"]
+z_index = 1
+
+[node name="Forest1" parent="Map/ForestParent" instance=ExtResource("3_5mejs")]
+
+[node name="Forest2" parent="Map/ForestParent" instance=ExtResource("3_5mejs")]
+position = Vector2(-28, 21)
+
+[node name="Forest3" parent="Map/ForestParent" instance=ExtResource("3_5mejs")]
+position = Vector2(28, 21)
+
+[node name="WaterParent" type="Node2D" parent="Map"]
+y_sort_enabled = true
+
+[node name="Water1" parent="Map/WaterParent" instance=ExtResource("5_s12we")]
+position = Vector2(-28, -63)
+
+[node name="Water2" parent="Map/WaterParent" instance=ExtResource("5_s12we")]
+position = Vector2(-56, -41)
+
+[node name="TileBrokenParent" type="Node2D" parent="Map"]
+y_sort_enabled = true
+
+[node name="TileBroken1" parent="Map/TileBrokenParent" instance=ExtResource("2_5mejs")]
+visible = false
+position = Vector2(56, -26)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbddg1umfw1iv"]
+
+[ext_resource type="SpriteFrames" uid="uid://bawj0uk71df2t" path="res://Assest/Animations/tile_broken.tres" id="1_gdeil"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Tile" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_gdeil")
+frame_progress = 0.40837774
