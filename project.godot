@@ -17,9 +17,18 @@ config/icon="uid://oom2nprieuco"
 
 [autoload]
 
-"地图工具集"="*res://Scripts/Global/MapTools.gd"
+LogicCamera="*res://Scene/logic_camera.tscn"
 "信号总线"="*res://Scripts/Global/EventBus.gd"
+"地图工具集"="*res://Scripts/Global/MapTools.gd"
 "回合管理器"="*res://Scripts/Global/TurnManager.gd"
+
+[input]
+
+mouse_left={
+"deadzone": 0.2,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(430, 21),"global_position":Vector2(430, 50),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
 
 [rendering]
 

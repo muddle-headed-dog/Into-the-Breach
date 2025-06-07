@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmtsvqj8hlsdy"]
+
+[ext_resource type="Texture2D" uid="uid://baqa1umvn52iy" path="res://Assest/Sprites/cursor.png" id="1_nur0k"]
+
+[node name="Area" type="Node2D"]
+
+[node name="Area" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.11764706)
+texture = ExtResource("1_nur0k")

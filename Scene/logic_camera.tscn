@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://crx3fpln1vuoj"]
+
+[node name="LogicCamera" type="Camera2D"]
+visible = false
+zoom = Vector2(1.5, 1.5)
+metadata/_edit_lock_ = true

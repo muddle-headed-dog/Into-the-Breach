@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://di4qc7v4wnb1g"]
+
+[ext_resource type="Texture2D" uid="uid://dlqng6c8ekck4" path="res://Assest/Sprites/area.png" id="1_h5dal"]
+
+[node name="Area" type="Node2D"]
+
+[node name="Area" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.11764706)
+texture = ExtResource("1_h5dal")
